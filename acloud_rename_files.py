@@ -52,7 +52,6 @@ def main():
 
     options = parser.parse_args()
 
-    ret_val = None
     try:
         ret_val = find_files(options.folder, options.old_extension, options.new_extension)
     except Exception as e:
